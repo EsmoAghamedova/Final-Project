@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>✨გაიგე მეტი✨</title>
+    <style>
+      body {
+        font-family: "Nunito", sans-serif;
+        background-color: #f8f8f8;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      .form-container {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        max-width: 400px;
+        width: 100%;
+        margin: 10px;
+      }
+
+      h2 {
+        text-align: center;
+        color: #333;
+      }
+
+      input[type="text"],
+      input[type="email"],
+      input[type="submit"] {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        box-sizing: border-box;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+
+      input[type="submit"] {
+        background-color: #6bbcff;
+        color: white;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+
+      input[type="submit"]:hover {
+        background-color: #57b3e8;
+      }
+
+      .decoration {
+        text-align: center;
+        margin: 20px 0;
+      }
+
+      .decoration img {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        background-color: #daf8f9;
+        padding: 10px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="form-container">
+      <h2>გამოგვიგზავნე შენი მეილი და ახალი ამბები უფრო სწრაფად გაიგე</h2>
+      <form action="../../index.html">
+        <input
+          type="text"
+          name="name"
+          placeholder="შენი სახელი"
+          required
+        /><br />
+        <input
+          type="email"
+          name="email"
+          placeholder="შენი მეილი"
+          required
+        /><br />
+        <input type="submit" value="გამოგვიგზავნე მეილი" />
+      </form>
+      <div class="decoration">
+        <img src="../../img/logo/logo1.svg" alt="Cute Decoration" />
+      </div>
+    </div>
+  </body>
+</html>

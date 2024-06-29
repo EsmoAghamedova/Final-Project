@@ -1,0 +1,302 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+@import url("//cdn.web-fonts.ge/fonts/bpg-banner/css/bpg-banner.min.css");
+@import url("//cdn.web-fonts.ge/fonts/bpg-nino-elite-exp-caps/css/bpg-nino-elite-exp-caps.min.css");
+@import url("//cdn.web-fonts.ge/fonts/bpg-mikheil-stefane/css/bpg-mikheil-stefane.min.css");
+@import url("//cdn.web-fonts.ge/fonts/alk-rounded-mtav-med/css/alk-rounded-mtav-med.min.css");
+@import url("//cdn.web-fonts.ge/fonts/alk-life/css/alk-life.min.css");
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* HEADER */
+
+header {
+
+    height: 100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin: 5px 40px;
+}
+
+header nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-family: "BPG Banner", sans-serif;
+    -webkit-box-flex: 5;
+    -ms-flex: 5;
+    flex: 5;
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly;
+}
+
+.contact {
+    text-decoration: underline;
+}
+
+.header-text a:hover {
+    text-shadow: 0px 0px 21px rgba(66, 68, 90, 1);
+    text-decoration: none;
+}
+
+.logo {
+    height: 100px;
+    width: 100px;
+    margin-bottom: 5px;
+    margin-right: 230px;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+}
+
+@media (min-width: 920px) {
+    .header-logo {
+        display: none;
+    }
+}
+
+@media (max-width: 920px) {
+    .header-text {
+        display: none;
+    }
+}
+
+@media (min-width: 660px) {
+    .burger-icon {
+        display: none;
+    }
+
+
+}
+
+.burger-icon {
+    width: 40px;
+}
+
+
+@media (max-width: 660px) {
+    .header-logo {
+        display: none;
+    }
+
+    header {
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+    }
+}
+
+.header-logo img {
+    width: 30px;
+
+}
+
+
+
+/* main */
+
+main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    background-color: rgba(0, 0, 0, 0.116);
+    border-radius: 30px;
+    height: 50vh;
+}
+
+.container h1 {
+    margin-bottom: 25px;
+    font-family: "BPG Banner", sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.container p {
+    margin-bottom: 10px;
+    font-family: "BPG Banner", sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+
+
+@media (max-width: 576px) {
+
+    .container,
+    .container-sm {
+        max-width: 600px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: -webkit-max-content;
+        max-width: -moz-max-content;
+        max-width: max-content;
+    }
+}
+
+
+
+@media (max-width: 650px) {
+    .container h1 {
+        font-size: 4vw;
+    }
+
+    .container p {
+        font-size: 2vw;
+    }
+
+    .container div {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+
+}
+
+@media (max-width: 650px) {
+    .container {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        height: 55vh;
+    }
+
+    iframe {
+        width: 80vw !important;
+        height: 30vh !important;
+    }
+
+
+}
+
+
+@media (max-width: 420px) {
+    .logo {
+        margin-right: 30vw;
+    }
+}
+
+
+
+
+
+iframe {
+    border-radius: 50px;
+    height: 45vh;
+    width: 40vw;
+}
+
+.change {
+    width: 90vw;
+    -webkit-box-align: baseline;
+    -ms-flex-align: baseline;
+    align-items: baseline;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+
+}
+
+.change h2 {
+    margin: 40px 0px;
+    font-size: 3vw;
+    font-family: "BPG Banner", sans-serif;
+}
+
+
+
+form {
+    width: 60vw;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    margin: 1vw 0px;
+    display: block;
+    font-size: 2vw;
+    font-family: "BPG Banner", sans-serif;
+}
+
+input,
+textarea {
+    width: 50vw;
+    padding: 8px;
+    margin-top: 3px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#message {
+    height: 15vh;
+}
+
+input[type="submit"] {
+    background-color: #57b3e8;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #4d9fce;
+}
